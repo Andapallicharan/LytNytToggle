@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    appearance: none;
+}
+
+input:checked::after{
+    content: '🌄';
+}
+
+div {
+    height: 725px;
+    width: 1550px;
+    background-color: black;
+}
+
+input:checked ~ div {
+   background-color: lightblue;
+}
+
+input::after {
+    content: '🌃';
+    font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<input type="checkbox">
+<div></div>
+
+</body>
+</html>.
